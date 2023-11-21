@@ -4,7 +4,7 @@ const nome = document.querySelector(".content h1");
 const repositorios = document.querySelector('#repositorios');
 const gists = document.querySelector('#gists');
 const seguidores = document.querySelector('#seguidores');
-const userBioElement = document.querySelector('#user-bio'); // Alterado para user-bio
+const userBioElement = document.querySelector('#user-bio');
 const usuario = document.querySelector("#usuario-github");
 const buscar = document.querySelector("#buscar-github");
 
@@ -30,7 +30,6 @@ const getGitHubInfo = function (username) {
             gists.innerText = data.public_gists;
             repositorios.innerText = data.public_repos;
 
-            // Exibir a Bio em vez do URL
             userBioElement.innerText = data.bio;
         }
 
